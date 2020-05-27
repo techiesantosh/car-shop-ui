@@ -1,0 +1,8 @@
+<div class="car">
+<div>Car Make :{{car.make}}</div>
+<div>Car Model :{{car.model}}</div>
+<div>Car Year :{{car.year_model}}</div>
+<div>Car Price :{{car.price.toLocaleString('en-US', {style: 'currency', currency: 'EUR'})}}</div>
+<div>Car DateAdded :{{car.dateadded}}</div>
+</div>
+<button (click)="addCarToCart(car)">Add</button>

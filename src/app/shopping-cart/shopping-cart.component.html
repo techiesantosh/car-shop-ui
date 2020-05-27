@@ -1,0 +1,6 @@
+
+<h1>Shopping Cart ({{calcTotal()}})</h1>
+<h3>Total : {{totalAmount()}}</h3>
+  <cars-in-cart *ngFor="let car of cars" 
+  [car]="car" (carRemoved)="removeCar($event)">
+
